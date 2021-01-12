@@ -1,6 +1,21 @@
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
+## pfn fork:
+
+This version is forked from the source posted at https://www.3d-nexus.com/newsroom/news-announcements-m/artillery-genius-marlin-advanced-1-1-9-with-new-ui-and-mesh-bed-leveling-and-more
+
+Main changes are to:
+
+* Add bilinear ABL using bltouch (4x4 grid)
+* Home using bltouch (override Z_MIN_PIN=19)
+* Increase max hotend temp to 300 (using all-metal hotend)
+* Increase max bed temp to 130
+* Disables manual MBL
+* Enables filament load/unload gcode (M701/M702)
+* Enables QUICK_HOME (diagonal X/Y homing)
+* Applies babystepping to M851 (probe Z-offset)
+
 ## Marlin 1.1
 
 Marlin 1.1 represents an evolutionary leap over Marlin 1.0.2. It is the result of over two years of effort by several volunteers around the world who have paid meticulous and sometimes obsessive attention to every detail. For this release we focused on code quality, performance, stability, and overall user experience. Several new features have also been added, many of which require no extra hardware.
