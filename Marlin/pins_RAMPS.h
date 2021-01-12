@@ -75,7 +75,8 @@
 #endif
 #define Y_MIN_PIN          14
 #define Y_MAX_PIN          15
-#define Z_MIN_PIN          18
+// must modify Z_MIN_PIN here to take effect
+#define Z_MIN_PIN          19
 #define Z_MAX_PIN          19
 
 //
